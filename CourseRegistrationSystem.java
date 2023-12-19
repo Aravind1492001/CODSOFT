@@ -71,7 +71,7 @@ public class CourseRegistrationSystem {
         // Initialize sample courses and add them to the course database
         courseDatabase.add(new Course("IT2301", "Java Programming", "Basic Java programming concepts", 30, "Mon/Wed 10:00 AM"));
         courseDatabase.add(new Course("EC6702", "Optical Communication and Networks", "Concepts of Fibre Optics and Networks", 25, "Tue/Thu 2:00 PM"));
-        // Add more courses similarly
+        // many more courses can be added
     }
 
     private static void menu() {
@@ -177,7 +177,7 @@ public class CourseRegistrationSystem {
     private static Student getCurrentStudent() {
         // Get the current student (in this simplified system, we assume only one student is using the system)
         if (studentDatabase.isEmpty()) {
-            studentDatabase.add(new Student(1, "John Doe", "Computer Science"));
+            studentDatabase.add(new Student(1, "Aravind", "ECE"));
         }
         return studentDatabase.get(0);
     }
